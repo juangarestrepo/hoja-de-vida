@@ -1,19 +1,18 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
+
 import { MdMenu, MdMenuOpen } from 'react-icons/md';
 
 const Navbar = () => {
   const [mostrarMenu, setMostrarMenu] = useState(false);
 
   const clickBoton = () => {
-    console.log('hice click en el boton');
     setMostrarMenu(!mostrarMenu);
   };
 
   return (
     <div>
       <nav className='flex items-center gap-3 p-3 bg-gray-900 md:hidden text-white'>
-        <button onClick={clickBoton} className='text-3xl'>
+        <button type='button' onClick={clickBoton} className='text-3xl'>
           {mostrarMenu ? <MdMenuOpen /> : <MdMenu />}
         </button>
         <span>Este es el navbar</span>

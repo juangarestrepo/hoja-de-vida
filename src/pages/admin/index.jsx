@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const IndexAdmin = () => {
   const [error, setError] = useState(false);
@@ -9,7 +8,10 @@ const IndexAdmin = () => {
   });
 
   useEffect(() => {
-    if (formData.nombre.toLowerCase() === 'daniel' && formData.apellido === 'Saldarriaga') {
+    if (
+      formData.nombre.toLowerCase() === 'daniel' &&
+      formData.apellido === 'Saldarriaga'
+    ) {
       setError(true);
     } else {
       setError(false);
