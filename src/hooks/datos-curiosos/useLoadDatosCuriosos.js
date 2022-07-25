@@ -8,12 +8,11 @@ const useLoadDatosCuriosos = () => {
   useEffect(() => {
     const consultarDatosCuriosos = async () => {
       setLoading(true);
-      const response = await axios.get('https://cat-fact.herokuapp.com/facts');
-      const arrayOfFacts = response.data.map((fact) => fact.text);
+      const response = await axios.get('https://catfact.ninja/facts');
+      const arrayOfFacts = response.data.data.map((fact) => fact.fact);
       setDatosCuriosos(arrayOfFacts);
       setLoading(false);
     };
-
     consultarDatosCuriosos();
   }, []);
 

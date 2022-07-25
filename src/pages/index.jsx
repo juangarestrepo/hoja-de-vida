@@ -9,7 +9,7 @@ const IndexPage = () => {
 
   return (
     <main className='p-10'>
-      <div className='flex gap-4'>
+      <div className='flex gap-4 flex-wrap'>
         {datosCuriosos.map((dato) => (
           <DatoCurioso key={nanoid()} dato={dato} />
         ))}
