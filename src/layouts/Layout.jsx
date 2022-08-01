@@ -42,7 +42,6 @@ const Layout = () => (
     <div className='h-full absolute align-bottom float-right lg:w-7/12	right-0 overflow-y-auto'>
       <Outlet />
     </div>
-    <footer className='bg-gray-200 p-3'>footer</footer>
   </main>
 );
 
