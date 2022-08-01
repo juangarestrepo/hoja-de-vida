@@ -2,13 +2,11 @@ const Educacion = () => (
   <div>
     <h1>EDUCACIÓN</h1>
     <br />
-    INGENIERO DE SISTEMAS
-    <br />
+    <p className='font-bold'>INGENIERO DE SISTEMAS</p>
     Universidad de Antioquia (En curso)
     <br />
     <br />
-    TÉCNICO EN DESARROLLO DE SOFTWARE
-    <br />
+    <p className='font-bold'>TÉCNICO EN DESARROLLO DE SOFTWARE</p>
     SENA(2017)
   </div>
 );

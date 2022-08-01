@@ -2,8 +2,7 @@ const Experiencia = () => (
   <div>
     <h1>EXPERIENCIA</h1>
     <br />
-    DESARROLLADOR STAFF
-    <br />
+    <p className='font-bold'>DESARROLLADOR STAFF</p>
     Siesa Digital (2021 - Presente)
     <ul className='pl-5'>
       <li className='list-disc'>
@@ -15,8 +14,7 @@ const Experiencia = () => (
       <li className='list-disc'>Documentación de requerimientos</li>
     </ul>
     <br />
-    INTÉRPRETE
-    <br />
+    <p className='font-bold'>INTÉRPRETE</p>
     Teleperformance (2021)
     <ul className='pl-5'>
       <li className='list-disc'>

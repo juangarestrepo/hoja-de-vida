@@ -1,17 +1,13 @@
-import { useLoadHobbies } from 'hooks/hobbies/useLoadHobbies';
-
-const Hobbies = () => {
-  const { currentImage, loading } = useLoadHobbies();
-  if (loading) return <div>Cargando...</div>;
-  // eslint-disable-next-line no-console
-  console.log(currentImage);
-  return (
-    <div>
-      {currentImage.map((dato) => (
-        <img src={dato} alt='hobbie' />
-      ))}
-    </div>
-  );
-};
+const Hobbies = () => (
+  <div>
+    <h1>HOBBIES</h1>
+    <br />
+    <ul className='pl-5'>
+      <li className='list-disc'>Fotografía</li>
+      <li className='list-disc'>Tenis de campo</li>
+      <li className='list-disc'>Ciclomontañismo</li>
+    </ul>
+  </div>
+);
 
 export { Hobbies };

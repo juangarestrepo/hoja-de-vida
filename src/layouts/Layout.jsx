@@ -3,29 +3,34 @@ import { Outlet } from 'react-router-dom';
 
 const Layout = () => (
   <main className='lg:h-screen h-40 bg-gray-200 lg:flex lg:flex-col  '>
-    <nav className="bg-blue-900 lg:float-left lg:fixed lg:left-0 lg:h-screen p-9 lg:w-4/12 text-white font-['Roboto']">
+    <nav className="bg-blue-900 lg:float-left lg:fixed lg:left-0 lg:h-screen w-5/6 p-9 lg:w-4/12 text-white font-['Roboto']">
       <h1 className=' font-bold text-5xl text-white'>
         JUAN ESTEBAN GARCIA RESTREPO
       </h1>
       <br />
       Desarrollador
       <br />
-      <section className='text-right'>
+      <section className='text-right px-3'>
         <a href='https://github.com/juangarestrepo'>
+          juangarestrepo&nbsp;
           <img
             src='https://cdn-icons-png.flaticon.com/512/25/25231.png'
             alt='Github'
-            className='w-9 float-right'
+            className='w-10 float-right border-r-8 border-r-transparent'
           />
         </a>
+        <br /> <br />
         <a href='https://www.linkedin.com/in/juan-esteban-garcía-a64833208/'>
+          Juan Esteban García&nbsp;
           <img
             src='https://cdn-icons-png.flaticon.com/512/174/174857.png'
             alt='LinkedIn'
             className='w-10 float-right border-r-8 border-r-transparent'
           />
         </a>
+        <br /> <br />
         <a href='mailto:juanestebangarcia5@gmail.com'>
+          juanestebangarcia5@gmail.com&nbsp;
           <img
             src='https://cdn-icons-png.flaticon.com/512/281/281769.png'
             alt='Gmail'

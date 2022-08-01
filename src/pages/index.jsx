@@ -18,7 +18,6 @@ const IndexPage = () => (
       <br />
       <Certificaciones />
       <br />
-      <h1>HOBBIES</h1>
       <Hobbies />
     </div>
   </main>

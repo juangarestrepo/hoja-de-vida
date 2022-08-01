@@ -1,6 +1,7 @@
 const Habilidades = () => (
   <div>
     <h1>HABILIDADES</h1>
+    <br />
     <ul className='pl-5'>
       <li className='list-disc'>Inglés C1</li>
       <li className='list-disc'>
