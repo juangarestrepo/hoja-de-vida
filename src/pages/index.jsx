@@ -8,7 +8,7 @@ import { Habilidades } from 'components/hoja-de-vida/Habilidades';
 import { Hobbies } from 'components/hoja-de-vida/Hobbies';
 
 const IndexPage = () => (
-  <main className='p-10 w-8/12 right-0 text-gray-700'>
+  <main className='p-10 lg:w-8/12 right-0 text-gray-700'>
     <div className='gap-4'>
       <Experiencia />
       <br />
