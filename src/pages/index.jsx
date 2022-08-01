@@ -1,21 +1,27 @@
-import { nanoid } from 'nanoid';
-import { DatoCurioso } from 'components/datos-curiosos/DatoCurioso';
-import { useLoadDatosCuriosos } from 'hooks/datos-curiosos/useLoadDatosCuriosos';
+// import { nanoid } from 'nanoid';
+// import { DatoCurioso } from 'components/datos-curiosos/DatoCurioso';
+// import { useLoadDatosCuriosos } from 'hooks/datos-curiosos/useLoadDatosCuriosos';
+import { Certificaciones } from 'components/hoja-de-vida/Certificaciones';
+import { Educacion } from 'components/hoja-de-vida/Educacion';
+import { Experiencia } from 'components/hoja-de-vida/Experiencia';
+import { Habilidades } from 'components/hoja-de-vida/Habilidades';
+import { Hobbies } from 'components/hoja-de-vida/Hobbies';
 
-const IndexPage = () => {
-  const { datosCuriosos, loading } = useLoadDatosCuriosos();
-
-  if (loading) return <div>Cargando...</div>;
-
-  return (
-    <main className='p-10'>
-      <div className='flex gap-4 flex-wrap'>
-        {datosCuriosos.map((dato) => (
-          <DatoCurioso key={nanoid()} dato={dato} />
-        ))}
-      </div>
-    </main>
-  );
-};
+const IndexPage = () => (
+  <main className='p-10 w-8/12 right-0 text-gray-700'>
+    <div className='gap-4'>
+      <Experiencia />
+      <br />
+      <Habilidades />
+      <br />
+      <Educacion />
+      <br />
+      <Certificaciones />
+      <br />
+      <h1>HOBBIES</h1>
+      <Hobbies />
+    </div>
+  </main>
+);
 
 export { IndexPage };
